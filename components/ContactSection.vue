@@ -3,19 +3,19 @@
     <div class="max-w-4xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Let's Connect</h2>
       <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
-        <a href="https://github.com" target="_blank"
+        <a href="https://github.com/Iyongbudiarso/" target="_blank"
           class="flex items-center space-x-2 px-6 py-3 bg-[#1a1a1a] hover:bg-blue-600 hover:text-white rounded-lg transition-colors text-gray-300 border border-[#252525]"
           aria-label="Visit my GitHub profile (opens in new tab)">
           <i class="fab fa-github" aria-hidden="true"></i>
           <span>GitHub</span>
         </a>
-        <a href="https://linkedin.com" target="_blank"
+        <a href="https://www.linkedin.com/in/iyongbudiarso/" target="_blank"
           class="flex items-center space-x-2 px-6 py-3 bg-[#1a1a1a] hover:bg-blue-600 hover:text-white rounded-lg transition-colors text-gray-300 border border-[#252525]"
           aria-label="Visit my LinkedIn profile (opens in new tab)">
           <i class="fab fa-linkedin" aria-hidden="true"></i>
           <span>LinkedIn</span>
         </a>
-        <a href="mailto:your.email@example.com"
+        <a href="mailto:iyongbudiarso@gmail.com"
           class="flex items-center space-x-2 px-6 py-3 bg-[#1a1a1a] hover:bg-blue-600 hover:text-white rounded-lg transition-colors text-gray-300 border border-[#252525]"
           aria-label="Send me an email">
           <i class="fas fa-envelope" aria-hidden="true"></i>

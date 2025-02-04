@@ -20,17 +20,17 @@
             simpler.
           </p>
           <div class="flex gap-4">
-            <a href="https://github.com/yourusername" target="_blank"
+            <a href="https://github.com/Iyongbudiarso/" target="_blank"
               class="text-gray-400 hover:text-white transition-colors" aria-label="Visit my GitHub profile">
               <i class="fab fa-github text-2xl" aria-hidden="true"></i>
               <span class="sr-only">GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank"
+            <a href="https://www.linkedin.com/in/iyongbudiarso/" target="_blank"
               class="text-gray-400 hover:text-white transition-colors" aria-label="Visit my LinkedIn profile">
               <i class="fab fa-linkedin text-2xl" aria-hidden="true"></i>
               <span class="sr-only">LinkedIn</span>
             </a>
-            <a href="mailto:your.email@example.com" class="text-gray-400 hover:text-white transition-colors"
+            <a href="mailto:iyongbudiarso@gmail.com" class="text-gray-400 hover:text-white transition-colors"
               aria-label="Send me an email">
               <i class="fas fa-envelope text-2xl" aria-hidden="true"></i>
               <span class="sr-only">Email</span>

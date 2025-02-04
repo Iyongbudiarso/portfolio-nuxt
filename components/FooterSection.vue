@@ -21,15 +21,19 @@
           </p>
           <div class="flex gap-4">
             <a href="https://github.com/yourusername" target="_blank"
-              class="text-gray-400 hover:text-white transition-colors">
-              <i class="fab fa-github text-2xl"></i>
+              class="text-gray-400 hover:text-white transition-colors" aria-label="Visit my GitHub profile">
+              <i class="fab fa-github text-2xl" aria-hidden="true"></i>
+              <span class="sr-only">GitHub</span>
             </a>
             <a href="https://linkedin.com/in/yourusername" target="_blank"
-              class="text-gray-400 hover:text-white transition-colors">
-              <i class="fab fa-linkedin text-2xl"></i>
+              class="text-gray-400 hover:text-white transition-colors" aria-label="Visit my LinkedIn profile">
+              <i class="fab fa-linkedin text-2xl" aria-hidden="true"></i>
+              <span class="sr-only">LinkedIn</span>
             </a>
-            <a href="mailto:your.email@example.com" class="text-gray-400 hover:text-white transition-colors">
-              <i class="fas fa-envelope text-2xl"></i>
+            <a href="mailto:your.email@example.com" class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Send me an email">
+              <i class="fas fa-envelope text-2xl" aria-hidden="true"></i>
+              <span class="sr-only">Email</span>
             </a>
           </div>
         </div>
@@ -38,10 +42,14 @@
         <div>
           <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
           <nav class="flex flex-col gap-3">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a>
-            <a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a>
-            <a href="#portfolio" class="text-gray-400 hover:text-white transition-colors">Portfolio</a>
-            <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Go to home section">Home</a>
+            <a href="#about" class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Go to about section">About</a>
+            <a href="#portfolio" class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Go to portfolio section">Portfolio</a>
+            <a href="#contact" class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Go to contact section">Contact</a>
           </nav>
         </div>
       </div>

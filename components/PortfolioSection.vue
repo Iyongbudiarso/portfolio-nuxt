@@ -7,11 +7,16 @@
       </div>
       <div class="flex flex-col gap-12">
         <div v-for="(project, index) in projects" :key="index" @click="$emit('open-modal', project)"
-          class="bg-[#121212] rounded-xl overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl hover:shadow-white/5 cursor-pointer border border-[#252525] group">
+          class="bg-[#121212] rounded-xl overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl hover:shadow-white/5 cursor-pointer border border-[#252525] group"
+          role="button" tabindex="0" :aria-label="`View details of ${project.title} project`"
+          @keydown.enter="$emit('open-modal', project)">
           <div class="flex flex-col md:flex-row">
             <div class="md:w-1/2">
-              <img :src="project.image" :alt="project.title"
-                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+              <picture>
+                <source :srcset="project.image.replace('.png', '.webp')" type="image/webp">
+                <img :src="project.image" :alt="project.title" loading="lazy"
+                  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+              </picture>
             </div>
             <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-between">
               <div>
@@ -25,7 +30,7 @@
                 </div>
               </div>
               <div class="flex items-center text-gray-400 group-hover:text-white transition-colors">
-                <span class="mr-2">View Project</span>
+                <span class="mr-2" aria-label="View details for {{ project.title }}">View Project</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd"
                     d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"

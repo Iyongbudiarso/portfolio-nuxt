@@ -18,7 +18,7 @@
         </div>
         <div
           class="flex flex-col items-center bg-[#121212] p-6 rounded-xl border border-[#252525] hover:border-blue-400 transition-colors w-32">
-          <img src="@/assets/icon/bri.png" alt="BRI" class="w-16 mb-4">
+          <img src="@/assets/icon/bri.png" alt="BRI" class="w-16 h-16 mb-4">
           <span class="text-gray-300 font-medium">BRI</span>
         </div>
         <div

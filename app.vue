@@ -29,21 +29,21 @@ const projects = ref([
   {
     title: 'ATM Mitra Bukalapak',
     description: 'Bukalapak',
-    image: '/portfolio/screely-1738559998372.png',
+    image: '/portfolio/screely-1738559998372.webp',
     longDescription: 'Achieved 50% reduction in primary content page loading time, significantly improving  and user experience. Realized 90% cost savings by developing the Feature Kirim Bank for specific banks through optimized transaction processes.',
     technologies: ['Vue', 'Web Design', 'Web.dev', 'Optimization Performance']
   },
   {
     title: 'Edunex Learning Management System',
     description: 'Edunex',
-    image: '/portfolio/screely-1738643547716.png',
+    image: '/portfolio/screely-1738643547716.webp',
     longDescription: 'Empowered online learning for ITB and Kampus Merdeka, supporting thousands of lecturers and students across Indonesia with Edunex LMS. Improved user experience by implementing real-time features powered by Socket.io. Built a scalable platform with Vue.js to facilitate both synchronous and asynchronous learning activities.',
     technologies: ['Vue.js', 'Socket.io', 'Real-time Features', 'LMS Development']
   },
   {
     title: 'School Fee Payment System',
     description: 'SMKN 4 Bandung',
-    image: '/portfolio/screely-1738562898417.png',
+    image: '/portfolio/screely-1738562898417.webp',
     longDescription: 'Developed and integrated a school fee payment system using J2SE technology. The application significantly improved financial processes by streamlining the management of school fee transactions. Successfully implemented and tested with selected students.',
     technologies: ['J2SE', 'Database Management', 'Financial Systems']
   }
@@ -71,6 +71,42 @@ onUnmounted(() => {
 })
 
 useHead({
+  title: 'Iyong Budiarso - Web Developer',
+  meta: [
+    {
+      name: 'description',
+      content: 'Web Developer with over 9 years of experience specializing in Vue.js, React, and full-stack development. View my portfolio of successful projects in web development and software engineering.'
+    },
+    // Open Graph
+    {
+      property: 'og:title',
+      content: 'Iyong Budiarso - Web Developer'
+    },
+    {
+      property: 'og:description',
+      content: 'Web Developer with over 9 years of experience specializing in Vue.js, React, and full-stack development.'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    },
+    // Twitter Card
+    {
+      name: 'twitter:card',
+      content: 'summary'
+    },
+    {
+      name: 'twitter:title',
+      content: 'Iyong Budiarso - Web Developer'
+    },
+    {
+      name: 'twitter:description',
+      content: 'Web Developer with over 9 years of experience specializing in Vue.js, React, and full-stack development.'
+    }
+  ],
+  htmlAttrs: {
+    lang: 'en'
+  },
   link: [
     {
       rel: 'stylesheet',

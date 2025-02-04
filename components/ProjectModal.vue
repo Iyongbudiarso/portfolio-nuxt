@@ -16,13 +16,16 @@
               <div class="p-6">
                 <div class="flex justify-between items-start mb-4">
                   <h2 class="text-2xl font-bold text-white">{{ project.title }}</h2>
-                  <button @click="$emit('close')" class="text-gray-400 hover:text-gray-200">
+                  <button @click="$emit('close')" class="text-gray-400 hover:text-gray-200" aria-label="Close modal">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
                 </div>
-                <img :src="project.image" :alt="project.title" class="w-full rounded-lg mb-4">
+                <picture>
+                  <source :srcset="project.image.replace('.png', '.webp')" type="image/webp">
+                  <img :src="project.image" :alt="project.title" class="w-full rounded-lg mb-4">
+                </picture>
                 <p class="text-gray-300 mb-4">{{ project.longDescription }}</p>
                 <div class="space-y-2">
                   <h3 class="font-semibold text-white">Technologies Used:</h3>

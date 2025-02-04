@@ -109,12 +109,43 @@ useHead({
   },
   link: [
     {
-      rel: 'stylesheet',
-      href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'
+      rel: 'preconnect',
+      href: 'https://cdnjs.cloudflare.com'
     },
     {
+      rel: 'preload',
+      href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
+      as: 'style',
+      onload: "this.onload=null;this.rel='stylesheet'"
+    },
+    // Fallback for browsers that don't support onload on link
+    {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'
+      href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
+      media: 'print',
+      onload: "this.media='all'"
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com'
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.gstatic.com',
+      crossorigin: 'anonymous'
+    },
+    {
+      rel: 'preload',
+      href: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap',
+      as: 'style',
+      onload: "this.onload=null;this.rel='stylesheet'"
+    },
+    // Fallback for browsers that don't support onload on link
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap',
+      media: 'print',
+      onload: "this.media='all'"
     }
   ]
 })

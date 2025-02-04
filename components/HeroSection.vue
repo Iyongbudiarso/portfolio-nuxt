@@ -1,0 +1,94 @@
+<template>
+  <section ref="sectionRef" class="flex items-center py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <!-- Left Column - Web Developer -->
+        <div class="text-left relative">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">
+            Hi, I'm <span class="text-blue-400">Iyong</span>
+          </h1>
+          <h2 class="text-2xl md:text-4xl text-blue-400 mb-4">Web Developer</h2>
+          <p class="text-lg text-gray-300 mb-8">Passionate about creating innovative web solutions with clean code and
+            exceptional user experiences.</p>
+          <div class="flex flex-col sm:flex-row gap-8 mb-8">
+            <div>
+              <div class="text-3xl md:text-4xl font-bold text-blue-400 mb-2">9+</div>
+              <div class="text-gray-300">Years Experience</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-bold text-blue-400 mb-2">50+</div>
+              <div class="text-gray-300">Successful Projects</div>
+            </div>
+          </div>
+          <div class="mt-16 text-center">
+            <a href="#about"
+              class="text-gray-400 hover:text-blue-400 transition-colors flex flex-col items-center animate-bounce">
+              <i class="fas fa-chevron-down text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-12">
+          <!-- About Me Section -->
+          <div class="pb-12 border-b border-[#252525]">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="text-2xl font-bold text-white">About Me</h3>
+              <a href="#about" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">Learn More →</a>
+            </div>
+            <p class="text-gray-300 text-lg leading-relaxed">
+              I specialize in creating beautiful, functional, and user-friendly websites.
+              With expertise in modern web technologies, I turn ideas into reality.
+            </p>
+          </div>
+
+          <!-- My Work Section -->
+          <div class="pb-12 border-b border-[#252525]">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="text-2xl font-bold text-white">Featured Work</h3>
+              <a href="#portfolio" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">Browse Portfolio
+                →</a>
+            </div>
+            <div class="space-y-6">
+              <!-- <img src="https://placehold.co/600x400" alt="Featured Project" class="w-full rounded-lg"> -->
+              <p class="text-gray-300 text-lg">
+                Explore my latest projects showcasing web applications, responsive designs, and creative solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="flex items-center gap-6">
+            <h3 class="text-white font-medium">Connect:</h3>
+            <div class="flex gap-4">
+              <a href="https://github.com/Iyongbudiarso" target="_blank"
+                class="text-gray-300 hover:text-blue-400 transition-colors">
+                <i class="fab fa-github text-2xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/iyongbudiarso/" target="_blank"
+                class="text-gray-300 hover:text-blue-400 transition-colors">
+                <i class="fab fa-linkedin text-2xl"></i>
+              </a>
+              <a href="mailto:iyongbudiarso@gmail.com" class="text-gray-300 hover:text-blue-400 transition-colors">
+                <i class="fas fa-envelope text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const sectionRef = ref(null)
+
+onMounted(() => {
+  // For hero section, we make it visible immediately
+  if (sectionRef.value) {
+    sectionRef.value.style.opacity = '1'
+  }
+})
+</script>

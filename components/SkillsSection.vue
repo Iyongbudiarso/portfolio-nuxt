@@ -6,12 +6,14 @@
       <div class="relative">
         <!-- Navigation Arrows -->
         <button @click="prevSlide"
-          class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center bg-[#1a1a1a]/80 text-blue-400 hover:text-blue-300 transition-colors rounded-full">
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center bg-[#1a1a1a]/80 text-blue-400 hover:text-blue-300 transition-colors rounded-full"
+          aria-label="View previous skills">
           <i class="fas fa-chevron-left text-2xl"></i>
         </button>
 
         <button @click="nextSlide"
-          class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center bg-[#1a1a1a]/80 text-blue-400 hover:text-blue-300 transition-colors rounded-full">
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 flex items-center justify-center bg-[#1a1a1a]/80 text-blue-400 hover:text-blue-300 transition-colors rounded-full"
+          aria-label="View next skills">
           <i class="fas fa-chevron-right text-2xl"></i>
         </button>
 
@@ -22,8 +24,9 @@
             <div v-for="(group, index) in skillGroups" :key="index" class="w-full flex-shrink-0">
               <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 px-12">
                 <div v-for="skill in group" :key="skill.name"
-                  class="flex flex-col items-center bg-[#121212] p-10 rounded-2xl border border-[#252525] hover:border-blue-400 transition-colors">
-                  <i :class="skill.icon" class="text-4xl text-blue-400 mb-4"></i>
+                  class="flex flex-col items-center bg-[#121212] p-10 rounded-2xl border border-[#252525] hover:border-blue-400 transition-colors"
+                  role="button" tabindex="0" :aria-label="`${skill.name} skill`">
+                  <i :class="skill.icon" class="text-4xl text-blue-400 mb-4" aria-hidden="true"></i>
                   <span class="text-gray-300 font-medium">{{ skill.name }}</span>
                 </div>
               </div>
@@ -35,7 +38,8 @@
         <div class="flex justify-center mt-8 space-x-2">
           <button v-for="(_, index) in skillGroups" :key="index" @click="currentSlide = index"
             class="w-3 h-3 rounded-full transition-colors"
-            :class="index === currentSlide ? 'bg-blue-400' : 'bg-gray-600 hover:bg-gray-500'">
+            :class="index === currentSlide ? 'bg-blue-400' : 'bg-gray-600 hover:bg-gray-500'"
+            :aria-label="`Go to skill group ${index + 1}`" :aria-current="index === currentSlide ? 'true' : 'false'">
           </button>
         </div>
       </div>

@@ -6,19 +6,19 @@
         <a href="https://github.com" target="_blank"
           class="flex items-center space-x-2 px-6 py-3 bg-[#1a1a1a] hover:bg-blue-600 hover:text-white rounded-lg transition-colors text-gray-300 border border-[#252525]"
           aria-label="Visit my GitHub profile (opens in new tab)">
-          <i class="fab fa-github"></i>
+          <i class="fab fa-github" aria-hidden="true"></i>
           <span>GitHub</span>
         </a>
         <a href="https://linkedin.com" target="_blank"
           class="flex items-center space-x-2 px-6 py-3 bg-[#1a1a1a] hover:bg-blue-600 hover:text-white rounded-lg transition-colors text-gray-300 border border-[#252525]"
           aria-label="Visit my LinkedIn profile (opens in new tab)">
-          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
           <span>LinkedIn</span>
         </a>
         <a href="mailto:your.email@example.com"
           class="flex items-center space-x-2 px-6 py-3 bg-[#1a1a1a] hover:bg-blue-600 hover:text-white rounded-lg transition-colors text-gray-300 border border-[#252525]"
           aria-label="Send me an email">
-          <i class="fas fa-envelope"></i>
+          <i class="fas fa-envelope" aria-hidden="true"></i>
           <span>Email</span>
         </a>
       </div>

@@ -22,8 +22,9 @@
           </div>
           <div class="mt-16 text-center">
             <a href="#about"
-              class="text-gray-400 hover:text-blue-400 transition-colors flex flex-col items-center animate-bounce">
-              <i class="fas fa-chevron-down text-xl"></i>
+              class="text-gray-400 hover:text-blue-400 transition-colors flex flex-col items-center animate-bounce"
+              aria-label="Scroll down to About section">
+              <i class="fas fa-chevron-down text-xl" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -34,7 +35,8 @@
           <div class="pb-12 border-b border-[#252525]">
             <div class="flex justify-between items-center mb-4">
               <h3 class="text-2xl font-bold text-white">About Me</h3>
-              <a href="#about" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">Learn More →</a>
+              <a href="#about" class="text-blue-400 hover:text-blue-300 transition-colors text-sm"
+                aria-label="Learn more about me">Learn More →</a>
             </div>
             <p class="text-gray-300 text-lg leading-relaxed">
               I specialize in creating beautiful, functional, and user-friendly websites.
@@ -46,7 +48,8 @@
           <div class="pb-12 border-b border-[#252525]">
             <div class="flex justify-between items-center mb-4">
               <h3 class="text-2xl font-bold text-white">Featured Work</h3>
-              <a href="#portfolio" class="text-blue-400 hover:text-blue-300 transition-colors text-sm">Browse Portfolio
+              <a href="#portfolio" class="text-blue-400 hover:text-blue-300 transition-colors text-sm"
+                aria-label="Browse my portfolio">Browse Portfolio
                 →</a>
             </div>
             <div class="space-y-6">
@@ -62,15 +65,16 @@
             <h3 class="text-white font-medium">Connect:</h3>
             <div class="flex gap-4">
               <a href="https://github.com/Iyongbudiarso" target="_blank"
-                class="text-gray-300 hover:text-blue-400 transition-colors">
-                <i class="fab fa-github text-2xl"></i>
+                class="text-gray-300 hover:text-blue-400 transition-colors" aria-label="Visit my GitHub profile">
+                <i class="fab fa-github text-2xl" aria-hidden="true"></i>
               </a>
               <a href="https://www.linkedin.com/in/iyongbudiarso/" target="_blank"
-                class="text-gray-300 hover:text-blue-400 transition-colors">
-                <i class="fab fa-linkedin text-2xl"></i>
+                class="text-gray-300 hover:text-blue-400 transition-colors" aria-label="Connect with me on LinkedIn">
+                <i class="fab fa-linkedin text-2xl" aria-hidden="true"></i>
               </a>
-              <a href="mailto:iyongbudiarso@gmail.com" class="text-gray-300 hover:text-blue-400 transition-colors">
-                <i class="fas fa-envelope text-2xl"></i>
+              <a href="mailto:iyongbudiarso@gmail.com" class="text-gray-300 hover:text-blue-400 transition-colors"
+                aria-label="Send me an email">
+                <i class="fas fa-envelope text-2xl" aria-hidden="true"></i>
               </a>
             </div>
           </div>

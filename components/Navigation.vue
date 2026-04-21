@@ -2,7 +2,7 @@
   <nav class="w-full bg-[#121212]">
     <div class="max-w-6xl mx-auto px-4 py-3">
       <div class="flex justify-between items-center">
-        <div class="text-2xl font-bold text-blue-400">&lt;/&gt;</div>
+        <NuxtLink to="/" class="text-2xl font-bold text-blue-400">&lt;/&gt;</NuxtLink>
         <!-- Hamburger button -->
         <button @click="isMenuOpen = !isMenuOpen" class="md:hidden text-gray-300 hover:text-blue-400"
           aria-label="Toggle navigation menu" :aria-expanded="isMenuOpen">
@@ -14,23 +14,23 @@
         </button>
         <!-- Desktop menu -->
         <div class="hidden md:flex space-x-6">
-          <a href="#about" class="text-gray-300 hover:text-blue-400 font-medium transition-colors"
-            aria-label="Navigate to About section">About</a>
-          <a href="#portfolio" class="text-gray-300 hover:text-blue-400 font-medium transition-colors"
-            aria-label="Navigate to Portfolio section">Portfolio</a>
-          <a href="#contact" class="text-gray-300 hover:text-blue-400 font-medium transition-colors"
-            aria-label="Navigate to Contact section">Contact</a>
+          <NuxtLink to="/#about" class="text-gray-300 hover:text-blue-400 font-medium transition-colors"
+            aria-label="Navigate to About section">About</NuxtLink>
+          <NuxtLink to="/#portfolio" class="text-gray-300 hover:text-blue-400 font-medium transition-colors"
+            aria-label="Navigate to Portfolio section">Portfolio</NuxtLink>
+          <NuxtLink to="/#contact" class="text-gray-300 hover:text-blue-400 font-medium transition-colors"
+            aria-label="Navigate to Contact section">Contact</NuxtLink>
         </div>
       </div>
       <!-- Mobile menu -->
       <div :class="['md:hidden', isMenuOpen ? 'block' : 'hidden']" class="pt-4 pb-3">
         <div class="flex flex-col space-y-4">
-          <a href="#about" class="text-gray-300 hover:text-blue-400 font-medium transition-colors"
-            aria-label="Navigate to About section">About</a>
-          <a href="#portfolio" class="text-gray-300 hover:text-blue-400 font-medium transition-colors"
-            aria-label="Navigate to Portfolio section">Portfolio</a>
-          <a href="#contact" class="text-gray-300 hover:text-blue-400 font-medium transition-colors"
-            aria-label="Navigate to Contact section">Contact</a>
+          <NuxtLink to="/#about" class="text-gray-300 hover:text-blue-400 font-medium transition-colors"
+            aria-label="Navigate to About section">About</NuxtLink>
+          <NuxtLink to="/#portfolio" class="text-gray-300 hover:text-blue-400 font-medium transition-colors"
+            aria-label="Navigate to Portfolio section">Portfolio</NuxtLink>
+          <NuxtLink to="/#contact" class="text-gray-300 hover:text-blue-400 font-medium transition-colors"
+            aria-label="Navigate to Contact section">Contact</NuxtLink>
         </div>
       </div>
     </div>

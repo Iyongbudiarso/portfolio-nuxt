@@ -42,14 +42,18 @@
         <div>
           <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
           <nav class="flex flex-col gap-3">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors"
+            <a href="/" class="text-gray-400 hover:text-white transition-colors"
               aria-label="Go to home section">Home</a>
-            <a href="#about" class="text-gray-400 hover:text-white transition-colors"
+            <a href="/#about" class="text-gray-400 hover:text-white transition-colors"
               aria-label="Go to about section">About</a>
-            <a href="#portfolio" class="text-gray-400 hover:text-white transition-colors"
+            <a href="/#portfolio" class="text-gray-400 hover:text-white transition-colors"
               aria-label="Go to portfolio section">Portfolio</a>
-            <a href="#contact" class="text-gray-400 hover:text-white transition-colors"
+            <a href="/#contact" class="text-gray-400 hover:text-white transition-colors"
               aria-label="Go to contact section">Contact</a>
+            <NuxtLink to="/terms" class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Go to terms of service">Terms of Service</NuxtLink>
+            <NuxtLink to="/privacy" class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Go to privacy policy">Privacy Policy</NuxtLink>
           </nav>
         </div>
       </div>

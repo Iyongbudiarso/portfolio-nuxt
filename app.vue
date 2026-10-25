@@ -10,6 +10,14 @@
 import Navigation from '~/components/Navigation.vue'
 import FooterSection from '~/components/FooterSection.vue'
 
+// Canonical URL: domain utama (apex 307 -> www), bukan *.vercel.app.
+// Root pakai trailing slash, halaman lain tanpa trailing slash.
+const SITE_URL = 'https://www.iyongbudiarso.com'
+const route = useRoute()
+const canonicalUrl = computed(() =>
+  route.path === '/' ? `${SITE_URL}/` : `${SITE_URL}${route.path.replace(/\/+$/, '')}`
+)
+
 useHead({
   title: 'Iyong Budiarso - Web Developer',
   meta: [
@@ -30,6 +38,14 @@ useHead({
       property: 'og:type',
       content: 'website'
     },
+    {
+      property: 'og:url',
+      content: canonicalUrl
+    },
+    {
+      property: 'og:site_name',
+      content: 'Iyong Budiarso'
+    },
     // Twitter Card
     {
       name: 'twitter:card',
@@ -48,6 +64,10 @@ useHead({
     lang: 'en'
   },
   link: [
+    {
+      rel: 'canonical',
+      href: canonicalUrl
+    },
     {
       rel: 'preconnect',
       href: 'https://cdnjs.cloudflare.com'
